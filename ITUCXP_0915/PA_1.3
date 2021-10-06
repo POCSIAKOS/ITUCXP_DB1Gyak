@@ -5,12 +5,12 @@ void pelda_2(char *fnev1, char *fnev2)
          int pos; 
          if ((fp1 = fopen(fnev1, "r")) == NULL)
          {
-            printf("\nNem lehet megnyitni a fajlt.");
+            printf("\n Nem lehet megnyitni a fajlt.");
             return;
          }
          else
          { 
-            printf("\nFajl megnyitva masolasra…\n "); 
+            printf("\n Fajl megnyitva masolasra…\n "); 
          } 
          fp2 = fopen(fnev2, "w"); 
          fseek(fp1, 0L, SEEK_END);   // File pointer a fajl vegere pos = ftell(fp1); 
