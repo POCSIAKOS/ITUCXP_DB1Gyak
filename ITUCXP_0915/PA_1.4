@@ -32,16 +32,16 @@ void pelda_3_olvas(int poz){
   FILE *fdata; 
   fdata = fopen("Autok.dat", "rb");  struct Auto aurek; 
   if (fdata == NULL) {
-  printf ("file hiba\n");
+  printf ("file hiba\n ");
   return;
 }  
 
   fseek(fdata, (poz-1)* sizeof(struct Auto),0 );
   fread(&aurek, sizeof(struct Auto),1, fdata);
 
-  printf ("rsz: %s\n", aurek.rendszam);
-  printf ("tip: %s\n", aurek.tipus); 
-  printf ("ar: %d\n", aurek.ar); 
+  printf ("rsz: %s\n ", aurek.rendszam);
+  printf ("tip: %s\n ", aurek.tipus); 
+  printf ("ar: %d\n ", aurek.ar); 
   fclose(fdata);
   
 }
