@@ -1,0 +1,5 @@
+SELECT * FROM termek WHERE ear > X
+SELECT nev, adoszam FROM gyarto WHERE telephely = ‘X’
+SELECT COUNT(*) FROM termek WHERE ear > X
+SELECT tkod FROM termek WHERE nev LIKE ‘%tej%’
+SELECT nev FROM gyarto WHERE telephely IS NULL
